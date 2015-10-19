@@ -15,6 +15,8 @@
 		511840E51BD485DF006B95A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 511840E31BD485DF006B95A4 /* LaunchScreen.storyboard */; };
 		511840F01BD485DF006B95A4 /* testCameraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511840EF1BD485DF006B95A4 /* testCameraTests.swift */; };
 		511840FB1BD485DF006B95A4 /* testCameraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511840FA1BD485DF006B95A4 /* testCameraUITests.swift */; };
+		511841091BD48700006B95A4 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511841081BD48700006B95A4 /* MainTabBarController.swift */; settings = {ASSET_TAGS = (); }; };
+		5118410B1BD48C10006B95A4 /* PhotoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5118410A1BD48C10006B95A4 /* PhotoHelper.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		511840F61BD485DF006B95A4 /* testCameraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testCameraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		511840FA1BD485DF006B95A4 /* testCameraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testCameraUITests.swift; sourceTree = "<group>"; };
 		511840FC1BD485DF006B95A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		511841081BD48700006B95A4 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		5118410A1BD48C10006B95A4 /* PhotoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				511840E11BD485DF006B95A4 /* Assets.xcassets */,
 				511840E31BD485DF006B95A4 /* LaunchScreen.storyboard */,
 				511840E61BD485DF006B95A4 /* Info.plist */,
+				511841081BD48700006B95A4 /* MainTabBarController.swift */,
+				5118410A1BD48C10006B95A4 /* PhotoHelper.swift */,
 			);
 			path = testCamera;
 			sourceTree = "<group>";
@@ -260,6 +266,8 @@
 			files = (
 				511840DD1BD485DF006B95A4 /* SecondViewController.swift in Sources */,
 				511840D91BD485DF006B95A4 /* AppDelegate.swift in Sources */,
+				5118410B1BD48C10006B95A4 /* PhotoHelper.swift in Sources */,
+				511841091BD48700006B95A4 /* MainTabBarController.swift in Sources */,
 				511840DB1BD485DF006B95A4 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
