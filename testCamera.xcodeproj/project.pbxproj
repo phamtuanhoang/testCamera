@@ -16,7 +16,9 @@
 		511840F01BD485DF006B95A4 /* testCameraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511840EF1BD485DF006B95A4 /* testCameraTests.swift */; };
 		511840FB1BD485DF006B95A4 /* testCameraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511840FA1BD485DF006B95A4 /* testCameraUITests.swift */; };
 		511841091BD48700006B95A4 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511841081BD48700006B95A4 /* MainTabBarController.swift */; settings = {ASSET_TAGS = (); }; };
-		5118410B1BD48C10006B95A4 /* PhotoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5118410A1BD48C10006B95A4 /* PhotoHelper.swift */; settings = {ASSET_TAGS = (); }; };
+		51B35E821BD635140008D15D /* PhotoTakingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B35E811BD635140008D15D /* PhotoTakingHelper.swift */; settings = {ASSET_TAGS = (); }; };
+		51B35E881BD647CE0008D15D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B35E871BD647CE0008D15D /* Post.swift */; settings = {ASSET_TAGS = (); }; };
+		D414AD9D0B3A417A146A5DF0 /* libPods-testCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F0B48A569D21FCC2B6C996 /* libPods-testCamera.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +54,12 @@
 		511840FA1BD485DF006B95A4 /* testCameraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testCameraUITests.swift; sourceTree = "<group>"; };
 		511840FC1BD485DF006B95A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		511841081BD48700006B95A4 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
-		5118410A1BD48C10006B95A4 /* PhotoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoHelper.swift; sourceTree = "<group>"; };
+		51B35E811BD635140008D15D /* PhotoTakingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTakingHelper.swift; sourceTree = "<group>"; };
+		51B35E831BD646C80008D15D /* testCamera-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "testCamera-Bridging-Header.h"; sourceTree = "<group>"; };
+		51B35E871BD647CE0008D15D /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		8C44DA90070967BAC78A8C53 /* Pods-testCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testCamera.release.xcconfig"; path = "Pods/Target Support Files/Pods-testCamera/Pods-testCamera.release.xcconfig"; sourceTree = "<group>"; };
+		C7F0B48A569D21FCC2B6C996 /* libPods-testCamera.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-testCamera.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D23F7CC7D24B008F3EA65CAB /* Pods-testCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testCamera.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testCamera/Pods-testCamera.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D414AD9D0B3A417A146A5DF0 /* libPods-testCamera.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +95,8 @@
 				511840EE1BD485DF006B95A4 /* testCameraTests */,
 				511840F91BD485DF006B95A4 /* testCameraUITests */,
 				511840D61BD485DF006B95A4 /* Products */,
+				DEA082DBD2BC36C6B6D51304 /* Pods */,
+				D52398D57EB4D9BB68036F0F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +113,8 @@
 		511840D71BD485DF006B95A4 /* testCamera */ = {
 			isa = PBXGroup;
 			children = (
+				51B35E861BD647BD0008D15D /* Models */,
+				51B35E801BD634FE0008D15D /* PhotoTaking */,
 				511840D81BD485DF006B95A4 /* AppDelegate.swift */,
 				511840DA1BD485DF006B95A4 /* FirstViewController.swift */,
 				511840DC1BD485DF006B95A4 /* SecondViewController.swift */,
@@ -111,7 +123,7 @@
 				511840E31BD485DF006B95A4 /* LaunchScreen.storyboard */,
 				511840E61BD485DF006B95A4 /* Info.plist */,
 				511841081BD48700006B95A4 /* MainTabBarController.swift */,
-				5118410A1BD48C10006B95A4 /* PhotoHelper.swift */,
+				51B35E831BD646C80008D15D /* testCamera-Bridging-Header.h */,
 			);
 			path = testCamera;
 			sourceTree = "<group>";
@@ -134,6 +146,39 @@
 			path = testCameraUITests;
 			sourceTree = "<group>";
 		};
+		51B35E801BD634FE0008D15D /* PhotoTaking */ = {
+			isa = PBXGroup;
+			children = (
+				51B35E811BD635140008D15D /* PhotoTakingHelper.swift */,
+			);
+			name = PhotoTaking;
+			sourceTree = "<group>";
+		};
+		51B35E861BD647BD0008D15D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				51B35E871BD647CE0008D15D /* Post.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		D52398D57EB4D9BB68036F0F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7F0B48A569D21FCC2B6C996 /* libPods-testCamera.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DEA082DBD2BC36C6B6D51304 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D23F7CC7D24B008F3EA65CAB /* Pods-testCamera.debug.xcconfig */,
+				8C44DA90070967BAC78A8C53 /* Pods-testCamera.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,9 +186,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 511840FF1BD485DF006B95A4 /* Build configuration list for PBXNativeTarget "testCamera" */;
 			buildPhases = (
+				843AEF4BE9E7449CA5D0ACEA /* Check Pods Manifest.lock */,
 				511840D11BD485DF006B95A4 /* Sources */,
 				511840D21BD485DF006B95A4 /* Frameworks */,
 				511840D31BD485DF006B95A4 /* Resources */,
+				03B173D5610C26F4E93E5F40 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,6 +243,7 @@
 		511840CD1BD485DF006B95A4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "tuanhoang pham";
 				TargetAttributes = {
@@ -259,14 +307,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		03B173D5610C26F4E93E5F40 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-testCamera/Pods-testCamera-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		843AEF4BE9E7449CA5D0ACEA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		511840D11BD485DF006B95A4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51B35E821BD635140008D15D /* PhotoTakingHelper.swift in Sources */,
 				511840DD1BD485DF006B95A4 /* SecondViewController.swift in Sources */,
 				511840D91BD485DF006B95A4 /* AppDelegate.swift in Sources */,
-				5118410B1BD48C10006B95A4 /* PhotoHelper.swift in Sources */,
+				51B35E881BD647CE0008D15D /* Post.swift in Sources */,
 				511841091BD48700006B95A4 /* MainTabBarController.swift in Sources */,
 				511840DB1BD485DF006B95A4 /* FirstViewController.swift in Sources */,
 			);
@@ -406,23 +488,30 @@
 		};
 		511841001BD485DF006B95A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D23F7CC7D24B008F3EA65CAB /* Pods-testCamera.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = testCamera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tribal.testCamera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "testCamera/testCamera-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		511841011BD485DF006B95A4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C44DA90070967BAC78A8C53 /* Pods-testCamera.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = testCamera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tribal.testCamera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "testCamera/testCamera-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -493,6 +582,7 @@
 				511841011BD485DF006B95A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		511841021BD485DF006B95A4 /* Build configuration list for PBXNativeTarget "testCameraTests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +591,7 @@
 				511841041BD485DF006B95A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		511841051BD485DF006B95A4 /* Build configuration list for PBXNativeTarget "testCameraUITests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +600,7 @@
 				511841071BD485DF006B95A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

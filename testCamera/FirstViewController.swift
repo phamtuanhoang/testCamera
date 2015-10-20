@@ -10,7 +10,7 @@ import UIKit
 
 class FirstViewController: UIViewController {
 
-    var photoHelper : PhotoHelper?
+    var photoTakingHelper : PhotoTakingHelper?
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -24,10 +24,12 @@ class FirstViewController: UIViewController {
     
     func takePhoto(){
         //instantiate photo taking class, provide callback
-        let photoHelper = PhotoHelper(viewController: self.tabBarController!) { (image: UIImage?) -> Void in
-            //using trailing closure
-            print("in photo helper class")
-        }
+        photoTakingHelper = PhotoTakingHelper(viewController: self.tabBarController!, callback: { (image: UIImage?)  in
+            
+            let post = Post()
+            post.image = image
+            post.uploadPost()
+        })
     }
 }
 
